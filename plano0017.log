@@ -1,0 +1,106 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Vie Jul 30 10:49:36 2021
+Version 18.4.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Archivo de Control:   D:\TRANSACCIONES\plano0017.ctl
+Juego de caracteres WE8ISO8859P1 especificado para todas las entradas.
+
+Archivo de Datos:      D:\TRANSACCIONES\PLANO0017.TXT
+  Cadena de caracteres de la opción de procesamiento de archivos: "str '\r\n'"
+  Archivo de Errores:     D:\TRANSACCIONES\plano0017.bad
+  Desechar Archivo:  ninguno especificado
+ 
+ (Permitir todos los registros desechados)
+
+Número a cargar: ALL
+Número que omitir: 0
+Errores permitidos: 50
+Matriz de enlace:     250 filas, máximo de 1048576 bytes
+Continuación:    ninguno especificado
+Ruta de acceso utilizada:      Convencional
+
+Tabla TRANSACCIONES, cargada de cada registro lógico.
+Opción INSERT activa para esta tabla: APPEND
+Opción TRAILING NULLCOLS activada
+
+   Nombre Columna                  Posición   Long  Term Entorno Tipo de Dato
+------------------------------ ---------- ----- ---- ---- ---------------------
+TIPOMOV                             FIRST    10   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:TIPOMOV)"
+OPERACI                              NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NUMDOC                               NEXT    12   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:NUMDOC)"
+FECHAMOV                             NEXT     *   ;  O(") DATE mm/dd/yyyy      
+                                                      O(")
+CENORI                               NEXT    12   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:CENORI)"
+CENDES                               NEXT     3   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:CENDES)"
+CODPRO                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+UNICON                               NEXT     2   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:UNICON)"
+PRECIO                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+NOMPRO                               NEXT  4000   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:NOMPRO)"
+CANUNI                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+CANKIL                               NEXT     *   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TO_NUMBER(:CANKIL,'99999.999')"
+AU_USUARIO                           NEXT    10   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:AU_USUARIO)"
+AU_FECHA                             NEXT     *   ;  O(") DATE mm/dd/yyyy      
+                                                      O(")
+AU_HORA                              NEXT    10   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:AU_HORA)"
+OBS01                                NEXT   120   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:OBS01)"
+OBS02                                NEXT   120   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:OBS02)"
+TRANSP                               NEXT    10   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:TRANSP)"
+DOMICILIO                            NEXT    10   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:DOMICILIO)"
+ZONA                                 NEXT     7   ;  O(") CHARACTER            
+                                                      O(")
+    Cadena SQL para la columna: "TRIM(:ZONA)"
+
+el valor utilizado para el parámetro ROWS ha cambiado de 250 a 170
+
+Tabla TRANSACCIONES:
+  524794 Filas cargadas correctamente.
+  0 Filas no cargadas debido a errores de datos.
+  0 Filas no cargadas porque todas las cláusulas WHEN han fallado.
+  0 Filas no cargadas porque todos los campos eran nulos.
+
+
+Espacio asignado a matriz de enlace:          1047200 bytes (170 filas)
+Bytes de buffer de lectura: 1048576
+
+Total de registros lógicos omitidos:          0
+Total de registros lógicos leídos:      524794
+Total de registros lógicos rechazados:         0
+Total de registros lógicos desechados:        0
+
+La ejecución empezó en Vie Jul 30 10:49:36 2021
+La ejecución terminó en Vie Jul 30 10:50:48 2021
+
+Tiempo transcurrido:     00:01:11.96
+Tiempo de CPU:         00:00:12.85
